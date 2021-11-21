@@ -150,7 +150,7 @@ zeksapi = "vallganz5",
 dapapi = "anakasu",
 ApiZeks = "https://api.zeks.xyz",
 zeksApikey = "Alphabott",
-nomorowner1 = "@916909137213"; 
+nomorowner1 = "@94771323434"; 
 fake = `𝗢𝘄𝗻𝗲𝗿 : ${fakeyoi}\n㋛︎ 𝗣𝗿𝗲𝗳𝗶𝘅 :「 ${prefixStatus ? "Multi Prefix" : "No Prefix"} 」`;
 thumb = fs.readFileSync("./stik/thumb.jpeg"); 
 numbernye = "0"; 
@@ -349,7 +349,7 @@ const checkRegisteredUser = (sender) => {
       ? mek.participant
       : mek.key.remoteJid;
     const totalchat = await xeon.chats.all();
-    const ownerNumber = [`916909137213@s.whatsapp.net`]
+    const ownerNumber = [`94771323434@s.whatsapp.net`]
 	const senderNumber = sender.split("@")[0] 
     const m = simple.smsg(xeon, mek);
     const groupMetadata = isGroup ? await xeon.groupMetadata(from) : "";
@@ -379,7 +379,7 @@ const checkRegisteredUser = (sender) => {
     const totalhit = JSON.parse(fs.readFileSync("./lib/totalcmd.json"))[0]
       .totalcmd;
 const daftar1 = `Hi ${pushname} ${ucapanWaktu} \n\nBefore Using the Bot Verify First `
-       const daftar2 = '```Click the button below to verify bro or type 8473\n𝐃𝐨𝐠𝐞 𝐁𝐨𝐭```'
+       const daftar2 = '```Click the button below to verify bro or type 8473\n S```'
        const daftar3 = [
           {
             buttonId: `verify`,
@@ -796,7 +796,7 @@ if (!itsMe && !isOwner)return
             description: "Xeon",
             currencyCode: "USD",
             priceAmount1000: "2000",
-            retailerId: "𝐃𝐨𝐠𝐞 𝐁𝐨𝐭",
+            retailerId: "BOT ",
             productImageCount: 1,
           },
           businessOwnerJid: `0@s.whatsapp.net`,
