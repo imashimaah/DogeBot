@@ -191,7 +191,7 @@ console.log(`- [ Group Setting Change ] - In ${metdata.subject}`)
           "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60";
       }
       if (anu.action == "add" && mem.includes(client.user.jid)) {
-        client.sendMessage(anu.jid, "Hello everyone, am Doge Bot, ready to help you here ㋛︎", "conversation");
+        client.sendMessage(anu.jid, "ʜᴇʟʟᴏ ɪ ᴀᴍ ᴢ ᴡʜᴀᴛꜱᴀᴘᴘ ʀᴏʙᴏᴛ.ᴍʏ ᴏᴡɴᴇʀ ɪꜱ ɪᴍᴀꜱʜ ɴɪᴅᴜꜱʜᴀ.ᴛʜᴀᴄᴋꜱ ꜰᴏʀ ᴄʜᴏᴏꜱᴇɪɴɢ ᴍᴇ", "conversation");
       }
 hehe = await getBuffer(pp_user)
 if (anu.action == 'add' && !mem.includes(client.user.jid)) {
@@ -206,7 +206,7 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
                 anu_user = v.vname || v.notify || num.split('@')[0]
                 time_welc = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 time_wel = moment.tz('Asia/Kolkata').format("hh:mm")
-                teks = `🐼 *Hɪ* @${num.split('@')[0]}\n🐼 *Bɪᴏ* : *${thu.status}*\n🐼 *Mᴇᴍʙᴇʀs : ${memeg}*\n🐼 *Wᴇʟᴄᴏᴍᴇ Tᴏ* \n *${mdata.subject}*\n🐼 *ᴅᴏɴᴛ ꜰᴏʀɢᴇᴛ ᴛᴏ ʀᴇᴀᴅ ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ*\n 𝐃𝐨𝐠𝐞 𝐁𝐨𝐭`
+                teks = `🐼 *Hɪ* @${num.split('@')[0]}\n🐼 *Bɪᴏ* : *${thu.status}*\n🐼 *Mᴇᴍʙᴇʀs : ${memeg}*\n🐼 *Wᴇʟᴄᴏᴍᴇ Tᴏ* \n *${mdata.subject}*\n🐼 *ᴅᴏɴᴛ ꜰᴏʀɢᴇᴛ ᴛᴏ ʀᴇᴀᴅ ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ*\nᴘᴏᴡᴇʀᴅ ʙʏ ᴢ ʙɪᴛ`
                 welcomeBut = [{buttonId:`getdeskgc`,buttonText:{displayText:'DESCRIPTION'},type:1}, {buttonId:`okeyx`,buttonText:{displayText:'CLICK HERE'},type:1}]
                 welcomeButt = { contentText: ` `, footerText: `${teks}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
                 client.sendMessage(mdata.id, welcomeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
@@ -222,7 +222,7 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
                 time_wel = moment.tz('Asia/Kolkata').format("hh:mm")
                 memeg = mdata.participants.length
                 out = `*Gᴏᴏᴅ Bʏᴇ* 👋\n@${num.split('@')[0]}\n*𝙷𝚘𝚙𝚎𝚏𝚞𝚕𝚕𝚢 𝚃𝚑𝚎𝚛𝚎 𝚆𝚘𝚗𝚝 𝙱𝚎 𝙱𝚞𝚛𝚍𝚎𝚗 𝙷𝚎𝚛𝚎 𝙰𝚗𝚢𝚖𝚘𝚛𝚎* 🐼\n 𝐁𝐨𝐭`
-                goodbyeBut = [{buttonId:`h`,buttonText:{displayText:'GET OUT 🚪'},type:1}, {buttonId:`sc`,buttonText:{displayText:'BOT SCRIPT'}, type:1}]
+                goodbyeBut = [{buttonId:`h`,buttonText:{displayText:'ɢᴇᴛ ᴏᴜᴛ ʟᴏᴏꜱᴇʀ'},type:1}, {buttonId:`sc`,buttonText:{displayText:'BOT SCRIPT👿'}, type:1}]
                 goodbyeButt = { contentText: ` `, footerText: `${out}`, buttons: goodbyeBut, headerType: 6, locationMessage: bosco3.message.locationMessage}
                 client.sendMessage(mdata.id, goodbyeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
             }
@@ -321,7 +321,7 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
         let buffer = await getBuffer(
           `https://api-yogipw.herokuapp.com/api/promote?name=${anu_user}&msg=promoted%20as%20admin&mem=${groupAdmins.length}&picurl=${ppimg}&bgurl=https://cdn.discordapp.com/attachments/819995259261288475/835055559941292032/style.jpg`
         );
-        teks = `${anu_user} has been promoted as admin`;
+        teks = `${anu_user} ʜᴀꜱ ʙᴇᴇɴ ᴘʀᴏᴍᴏᴛᴇᴅ ᴀꜱ ᴀᴅᴍɪɴ/n/nᴘᴏᴡᴇʀᴅ ʙʏ ᴢ ʙᴏᴛ`;
         client.sendMessage(mdata.id, buffer, MessageType.image, {
           caption: teks,
         });
@@ -344,7 +344,7 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
         let buffer = await getBuffer(
           `https://api-yogipw.herokuapp.com/api/demote?name=${anu_user}&msg=yahahaha demoted&mem=${groupAdmins.length}&picurl=${ppimg}&bgurl=https://cdn.discordapp.com/attachments/819995259261288475/835055559941292032/style.jpg`
         );
-        teks = `${anu_user} has been demoted from admin`;
+        teks = `${anu_user} ʜᴀꜱ ʙᴇᴇɴ ᴅᴇᴍᴏᴛᴇᴅ ꜰʀᴏᴍ ᴀᴅᴍɪɴ`;
         client.sendMessage(mdata.id, buffer, MessageType.image, {
           caption: teks,
         });
