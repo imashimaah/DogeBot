@@ -140,7 +140,7 @@ fkontakk = { key: {
     participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '94771323434-1604595598@g.us' } : {})
 },
  message: {
-    "contactMessage":{"displayName":'Zed',"vcard":"BEGIN:VCARD\nVERSION:3.0\nN:2;Xeon;;;\nFN:resku\nitem1.TEL;waid=94771323434:+91 690-9137-213\nitem1.X-ABLabel:Mobile\nEND:VCARD"
+    "contactMessage":{"displayName":'ɪᴍᴀꜱʜ',"vcard":"BEGIN:VCARD\nVERSION:3.0\nN:2;Xeon;;;\nFN:resku\nitem1.TEL;waid=94771323434:+91 690-9137-213\nitem1.X-ABLabel:Mobile\nEND:VCARD"
  }}}
 metdata = await client.groupMetadata(anu.jid)
 if(anu.announce == 'false'){
@@ -206,8 +206,8 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
                 anu_user = v.vname || v.notify || num.split('@')[0]
                 time_welc = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 time_wel = moment.tz('Asia/Kolkata').format("hh:mm")
-                teks = `🐼 *Hɪ* @${num.split('@')[0]}\n🐼 *Bɪᴏ* : *${thu.status}*\n🐼 *Mᴇᴍʙᴇʀs : ${memeg}*\n🐼 *Wᴇʟᴄᴏᴍᴇ Tᴏ* \n *${mdata.subject}*\n🐼 *ᴅᴏɴᴛ ꜰᴏʀɢᴇᴛ ᴛᴏ ʀᴇᴀᴅ ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ*\nᴘᴏᴡᴇʀᴅ ʙʏ ᴢ ʙɪᴛ`
-                welcomeBut = [{buttonId:`getdeskgc`,buttonText:{displayText:'DESCRIPTION'},type:1}, {buttonId:`okeyx`,buttonText:{displayText:'CLICK HERE'},type:1}]
+                teks = `⦔ *Hɪ* @${num.split('@')[0]}\n⦔ *Bɪᴏ* : *${thu.status}*\n⦔ *Mᴇᴍʙᴇʀs : ${memeg}*\n⦔ *Wᴇʟᴄᴏᴍᴇ Tᴏ* \n *${mdata.subject}*\n⦔ *ᴅᴏɴᴛ ꜰᴏʀɢᴇᴛ ᴛᴏ ʀᴇᴀᴅ ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ*\nᴘᴏᴡᴇʀᴅ ʙʏ ᴢ ʙoᴛ`
+                welcomeBut = [{buttonId:`getdeskgc`,buttonText:{displayText:'DESCRIPTION🐾'},type:1}, {buttonId:`okeyx`,buttonText:{displayText:'CLICK HERE🐾'},type:1}]
                 welcomeButt = { contentText: ` `, footerText: `${teks}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
                 client.sendMessage(mdata.id, welcomeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
                  }
@@ -221,8 +221,8 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
                 time_welc = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 time_wel = moment.tz('Asia/Kolkata').format("hh:mm")
                 memeg = mdata.participants.length
-                out = `*Gᴏᴏᴅ Bʏᴇ* 👋\n@${num.split('@')[0]}\n*𝙷𝚘𝚙𝚎𝚏𝚞𝚕𝚕𝚢 𝚃𝚑𝚎𝚛𝚎 𝚆𝚘𝚗𝚝 𝙱𝚎 𝙱𝚞𝚛𝚍𝚎𝚗 𝙷𝚎𝚛𝚎 𝙰𝚗𝚢𝚖𝚘𝚛𝚎* 🐼\n 𝐁𝐨𝐭`
-                goodbyeBut = [{buttonId:`h`,buttonText:{displayText:'ɢᴇᴛ ᴏᴜᴛ ʟᴏᴏꜱᴇʀ'},type:1}, {buttonId:`sc`,buttonText:{displayText:'BOT SCRIPT👿'}, type:1}]
+                out = `*Gᴏᴏᴅ Bʏᴇ ʙʀᴏ* 👋\n@${num.split('@')[0]}\n*OH HE/SHE IS GOING*\nᴘᴏᴡᴇʀᴅ ʙʏ ᴢ ʙᴏᴛ`
+                goodbyeBut = [{buttonId:`h`,buttonText:{displayText:'ɢᴇᴛ ᴏᴜᴛ ʟᴏᴏꜱᴇʀ'},type:1}, {buttonId:`sc`,buttonText:{displayText:'ᴏᴡɴᴇʀ ɴᴜᴍʙᴇʀ'}, type:1}]
                 goodbyeButt = { contentText: ` `, footerText: `${out}`, buttons: goodbyeBut, headerType: 6, locationMessage: bosco3.message.locationMessage}
                 client.sendMessage(mdata.id, goodbyeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
             }
