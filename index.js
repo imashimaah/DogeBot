@@ -105,22 +105,22 @@ const bgg = fs.readFileSync('./stik/fake.jpeg')
 //// Image ///
 const time2 = moment().tz("Asia/Jakarta").format("HH:mm:ss");
     if (time2 < "24:59:00") {
-      var ucapanWaktu = "Good night";
+      var ucapanWaktu = "ʜᴇʟʟᴏ Good night";
     }
     if (time2 < "19:00:00") {
-      var ucapanWaktu = "Good evening🌞";
+      var ucapanWaktu = "ʜᴇʟʟᴏ Good evening🌞";
     }
     if (time2 < "18:00:00") {
-      var ucapanWaktu = "Good afternoon🌄";
+      var ucapanWaktu = "ʜᴇʟʟᴏ Good afternoon🌄";
     }
     if (time2 < "15:00:00") {
-      var ucapanWaktu = "Good afternoon☀️";
+      var ucapanWaktu = "ʜᴇʟʟᴏ Good afternoon☀️";
     }
     if (time2 < "11:00:00") {
-      var ucapanWaktu = "Good morning🌅";
+      var ucapanWaktu = " ʜᴇʟʟᴏ Good morning🌅";
     }
     if (time2 < "05:00:00") {
-      var ucapanWaktu = "Good night🌃";
+      var ucapanWaktu = "ʜᴇʟʟᴏ Good night🌃";
     }
  // BATAS \\
 menusimpel = false
@@ -935,7 +935,7 @@ remoteJid :"6289523258649-1604595598@g.us" }: {})
                     },message:{"orderMessage":{"orderId":"174238614569481","thumbnail":fs.readFileSync(`./stik/thumb.jpeg`),"itemCount":10,"status":"INQUIRY","surface":"CATALOG","message":`ZBOT`,"token":"AR6xBKbXZn0Xwmu76Ksyd7rnxI+Rx87HfinVlW4lwXa6JA=="}}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true})}
 // Katalog
 const reply = (teks) => {
-             res = xeon.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 111119999, "message": teks, "footerText": "*ZBOT*", "thumbnail": bgg, "surface": 'CATALOG' }}, {quoted:ftrol})
+             res = xeon.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 111119999, "message": teks, "footerText": "*Z BOT*", "thumbnail": bgg, "surface": 'CATALOG' }}, {quoted:ftrol})
              xeon.relayWAMessage(res)
         }
 const fakewa = (teks) => {        
@@ -980,7 +980,7 @@ sendEphemeral: false,
 "body": `${ucapanWaktu}`,
 "mediaType": "2",
 "thumbnailUrl": "https://www.linkpicture.com/q/zeon.jpg",
-"mediaUrl": "👿",
+"mediaUrl": "wa.me/94771323434",
 "thumbnail": fs.readFileSync('./stik/thumb.jpeg'),
 "sourceUrl": "",
 },mentionedJid:[sender]}, quoted : fgif})
@@ -1228,7 +1228,7 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
     if (isGroup && isAntilink && !mek.key.fromMe) {
       if (budy.includes("://chat.whatsapp.com/")) {
         if (isGroupAdmins) return reply("only admin");
-        reply("ANTILINK DETECTED!! SORRY YOU WILL BE KICKED ;V");
+        reply("ANTILINK DETECTED!! SORRY YOU WILL BE KICKED ;V/nᴘᴏᴡᴇʀᴅ ʙʏ ᴢ ʙᴏᴛ");
         xeon.groupRemove(from, [sender]);
       }
     }
@@ -1360,7 +1360,7 @@ groups = xeon.chats.array.filter(v => v.jid.endsWith('g.us'))
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-       txtt =`Hi ${pushname} 👋\n\nIF YOU ARE USING MOD WHATSAPP & BUTTONS DOESNT SHOW, TYPE #allmenu`
+       txtt =`Hi ${pushname} 👋\n\nIF YOU ARE USING MOD WHATSAPP & BUTTONS DOESNT SHOW, TYPE #allmenu\nඔබ වට්සැප් මොඩ් භාවිත කරන්නේ නම් බට්න් මෙනුව නොපිනේ\nමොඩ් වට්සැප් භාවිත කරන්නේ නම් මෙනුව සඳහා #allmenu විදානය භාවිත කරන්න`
 
                buttons = [{buttonId:`allmenu`, 
                buttonText:{displayText: 'MENU🐼'},type:1},
@@ -1372,7 +1372,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 
                buttonsMessage = {
                contentText: `${txtt}`,
-               footerText: `シ︎ 𝙎𝙩𝙖𝙩𝙪𝙨 シ︎
+               footerText: `シ︎ 𝙕 𝘽𝙊𝙏 𝙎𝙩𝙖𝙩𝙪𝙨 シ︎
                
  𝐆𝐫𝐨𝐮𝐩 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
  𝐏𝐫𝐢𝐯𝐚𝐭𝐞 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
@@ -1389,7 +1389,7 @@ prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: fkont
                break
 
         case 'allmenu':
-        case 'xeon':
+        case 'Z WHATSAPP USER BOT':
 groups = xeon.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = xeon.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -1408,17 +1408,17 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
        stst = await xeon.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
        menu = `
-🐼 Hi @${sender.split("@")[0]}
+🐾 Hi @${sender.split("@")[0]}
 
-シ︎ 𝐆𝐫𝐨𝐮𝐩 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
-シ︎ 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
-シ︎ 𝐓𝐨𝐭𝐚𝐥 𝐂𝐡𝐚𝐭𝐬 : ${totalChat.length}
-シ︎ 𝐒𝐩𝐞𝐞𝐝 : ${latensie.toFixed(4)} _Second_
-シ︎ 𝐀𝐜𝐭𝐢𝐯𝐞 : ${runtime(process.uptime())}
-シ︎ 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦 : ${os.platform()}
+🦠 𝐆𝐫𝐨𝐮𝐩 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
+🦠 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
+🦠 𝐓𝐨𝐭𝐚𝐥 𝐂𝐡𝐚𝐭𝐬 : ${totalChat.length}
+🦠 𝐒𝐩𝐞𝐞𝐝 : ${latensie.toFixed(4)} _Second_
+🦠 𝐀𝐜𝐭𝐢𝐯𝐞 : ${runtime(process.uptime())}
+🦠 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦 : ${os.platform()}
 ${readmore}
  
- ⬣ 𝙊𝙒𝙉𝙀𝙍 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
+ ⬣ 𝘽𝙊𝙏 𝙊𝙒𝙉𝙀𝙍 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
 > ⬡ ${prefix}off
 > ⬡ ${prefix}isbaileys
 > ⬡ ${prefix}banchat
@@ -1859,7 +1859,7 @@ case 'buglink':
                 "previewType": "PHOTO",
                 "thumbnailUrl": "https://www.linkpicture.com/q/zeon_1.jpg",
                 "thumbnail": fs.readFileSync(`./xeon.jpg`),
-                "sourceUrl": "👿"}}})
+                "sourceUrl": "wa.me/94771323434"}}})
                 break
         case 'bugbutton':
         if (!isOwner && !mek.key.fromMe) return reply('Only owner can use this feature')
@@ -1994,7 +1994,7 @@ let ini_list = []
 for (let i of nomorowner1) {
 const vname = xeon.contacts[i] != undefined ? xeon.contacts[i].vname || xeon.contacts[i].notify : undefined
 ini_list.push({
-"displayName": 'Xeon',
+"displayName": 'IMASH',
 "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${xeon.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 })
 }
@@ -2012,7 +2012,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
  description: `Hi @${sender.split('@')[0]}, Please select the menu here`,
  sections: [
                      {
-                      "title": `Xeon`,
+                      "title": `Z WHATSAPP BOT`,
  rows: [
                           {
                               "title": "Script",
@@ -2443,7 +2443,7 @@ case 'triggered':
 case 'script':
 		case 'sc':
 		case 'sourcecode':
-		xeon.sendMessage(from, { text: "👿", matchedText: 'nopee', description: "", title: "What are you doing?", jpegThumbnail: iye }, 'extendedTextMessage', { detectLinks: false, contextInfo: { forwardingScore: 508, isForwarded: true}, quoted: finv})
+		xeon.sendMessage(from, { text: "wa.me/94771323434", matchedText: 'nopee', description: "", title: "What are you doing?", jpegThumbnail: iye }, 'extendedTextMessage', { detectLinks: false, contextInfo: { forwardingScore: 508, isForwarded: true}, quoted: finv})
 		break
       //------------------< Sticker Cmd >-------------------
       case "addcmd":
@@ -2809,7 +2809,7 @@ break
 					}
 					break
 					// play
-					      case "play":
+					      case "song":
         if (args.length === 0)
           return reply(
             `Send orders *${prefix}play* _The title of the song to be searched_`
@@ -2828,9 +2828,9 @@ break
                   return sendMediaURL(
                     from,
                     thumb,
-                    `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_For the duration of more than the limit is presented in the link_`
+                    `*Z BOT PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n*Mp3 එක දිග වැඩී ඒ නිසා එන එකක් නැහැ\nᴘᴏᴡᴇʀᴅ ʙʏ ᴢ ʙᴏᴛ*`
                   );
-                const captions = `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Size* : ${filesizeF}\n*Link* : ${a.data}\n\n_Please wait for the media file to be sent it may take a few minutes_`;
+                const captions = `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Size* : ${filesizeF}\n*Link* : ${a.data}\n\n*සිංදුව ඩවුන්ලෝඩ් වෙන ගමන් ටික වෙලාවක් දෙන්න\nᴘᴏᴡᴇʀᴅ ʙʏ ᴢ ʙᴏᴛ*`;
                 sendMediaURL(from, thumb, captions);
                 await sendMediaURL(from, dl_link).catch(() => reply("error"));
               });
@@ -2863,7 +2863,7 @@ case 'playm2': case 'ytmp3':
 											}
 									break
         //ytmp4
-              case "ytmp4":
+              case "video":
         if (args.length === 0)
           return reply(`Send orders *${prefix}ytmp4 [linkYt]*`);
         let isLinks2 = args[0].match(
@@ -2881,7 +2881,7 @@ case 'playm2': case 'ytmp3':
                   return sendMediaURL(
                     from,
                     thumb,
-                    `*YTMP 4!*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_For the duration of more than the limit is presented in the link_`
+                    `*YTMP 4!*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_For the duration of more than the limit is presented in the link_\nᴘᴏᴡᴇʀᴅ ʙʏ ᴢ ʙᴏᴛ`
                   );
                 const captionsYtmp4 = `*Data Successfully Obtained!*\n\n*Title* : ${title}\n*Ext* : MP4\n*Size* : ${filesizeF}\n\n_Please wait for the media file to be sent it may take a few minutes_`;
                 sendMediaURL(from, thumb, captionsYtmp4);
@@ -4199,7 +4199,7 @@ case 'debug2':
       {
         "urlButton": {
           "displayText": `Script ${fakeyoi}`,
-          "url": "https://github.com/imashimaah/DogeBot"
+          "url": "https://github.com"
         },
         "index": 0
       }
@@ -4810,11 +4810,11 @@ xeon.sendMessage(from, vid, video, {quoted: mek})
 break
 case 'writelist':
   reply(`Example ${prefix}write tes
-  ♥ ${prefix}write Xeon
-  ♥ ${prefix}folioright Xeon
-  ♥ ${prefix}folioleft Xeon
-  ♥ ${prefix}writedown Xeon
-  ♥ ${prefix}writeleft Xeon`)
+  ♥ ${prefix}write ᴢ
+  ♥ ${prefix}folioright ᴢ
+  ♥ ${prefix}folioleft ᴢ
+  ♥ ${prefix}writedown ᴢ
+  ♥ ${prefix}writeleft ᴢ`)
   break
 case 'folioleft':
 if (!c) return reply('Where is the text bro??')
@@ -5980,7 +5980,7 @@ Source : ${anu.result.source}
           fs.unlinkSync(ran);
         });
         break;
-      case "ytsearch":
+      case "yt":
         if (args.length < 1) return reply("Please enter a query!");
         var srch = args.join("");
         try {
@@ -6005,7 +6005,7 @@ Source : ${anu.result.source}
           ytresult +=
             "❏ Upload: " + video.ago + "\n________________________\n\n";
         });
-        ytresult += "◩ *SELF-BOT*";
+        ytresult += "◩ *ᴢ-BOT*";
         await fakethumb(tbuff, ytresult);
         break;
       case "setreply":
